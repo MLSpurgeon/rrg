@@ -16,7 +16,7 @@
 	<!-- Define the styles for our page elements -->
 	<style>
 		body {
-			margin: 1;
+			margin: 0;
 			padding: 0;
 			background: #d9e7d9;
 			font-family: 'Signika Negative', sans-serif;
@@ -66,10 +66,7 @@
 		li {
 			margin: 10px 0
 		}
-		#map {
-			width: 100%;
-			margin: 10px auto;
-		}
+		
 		.max-image-width {
 			width: 100%;
 		}
@@ -86,20 +83,21 @@
 		#map {
 			width: 100%;
 			height: 540px;
-			margin: 10px auto;
+			/* margin: 10px auto; */
 			border: 2px solid #d3d3d3;
 		}
 	</style>
 </head>
 
 <body>
+
+    <!-- The map outside the section element will fill container. -->
+    <div id='map'></div>
+    
 	<section>
 		<!--The title shown on the page-->
 		<h1>The Red River Gorge</h1>
 		<h2>Kentucky</h2>
-
-		<!-- The map -->
-		<div id='map'></div>
 
 		<!-- Your second heading -->
         <h2>Advanced GIS: Red River Gorge</h2>
