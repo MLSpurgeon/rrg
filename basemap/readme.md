@@ -4,4 +4,4 @@
  Photographs(6):
  NOTE: edit images to smaller sizes. 
 
-![Photo test](rrg/graphics/resize_test.png)
+![Trying to put a photo in](graphics/photo1.jpg)

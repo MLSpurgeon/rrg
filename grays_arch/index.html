@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8 />
+  <title>Title of page</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #d9e7d9;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      color: #3d3d3d;
+    }
+
+    section, header, footer {
+      width: 80%;
+      margin: 10px auto;
+    }
+
+    h1 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      font-size: 2.5em;
+      /* The em unit. 2.5x the current size */
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      color: gray;
+      font-size: 1.25em;
+      letter-spacing: .04em;
+    }
+
+    p {
+      font-size: 1em;
+      line-height: 1.5em;
+    }
+
+    a {
+      color: #005daa;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 10px 0
+    }
+
+    #map {
+      width: 100%;
+      margin: 0px auto;
+
+    }
+
+    .max-image-width {
+      width: 100%;
+    }
+
+
+    .linkbox {
+      margin: 3px 0 20px 0;
+      display: block;
+      font-weight: 300;
+    }
+
+    hr {
+      border: 0px;
+      border-bottom: 1px solid #3d3d3d;
+      padding-top: 20px;
+    }
+
+    /* Use float property to make two-column layout. */
+
+		.first-column {
+			float: left;
+			width: 49%;
+			padding-right: 2%;
+		}
+		.column {
+			float: left;
+			width: 49%;
+		}
+
+    /* Clear floats after the columns */
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* When browser is 800px wide or less */
+
+    @media screen and (max-width: 800px) {
+      .first-column,
+      .column {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <iframe src="map.html" width="100%" height="440px"></iframe>
+  <section>
+    <a href='map.html' class="linkbox">Full screen version</a>
+
+    <h1>Grays Arch</h1>
+    <h2>Authored by: Miranda Spurgeon</h2>
+
+    <div class="row">
+      <!-- First column, the left half -->
+      <div class="first-column">
+        <p>Info about park...</p>
+        <p>Some notable destinations include...</p>
+        <p>
+          <hr>
+          <h3>Additional maps of your park</h3>
+          <ul>
+            <li><a href="../geotiff">GeoTIFF layers</a></li>
+            <li><a href="../map">Interactive map *******made wit QGIS</a></li>
+          </ul>
+          <h3>Additional maps of the Bluegrass</h3>
+          <ul>
+            <li><a href="/waterways">Major waterways of Kentucky</a></li>
+            <li><a href="/population">Kentucly's population density</a></li>
+            <li><a href="/springs">Springs in Kentucky</a></li>
+          </ul>
+        </p>
+
+        <img class="max-image-width" src="path/to/image.jpg">
+        <p class="linkbox">Caption</p>
+
+        <img class="max-image-width" src="path/to/image.jpg">
+        <p class="linkbox">Caption</p>
+
+        <img class="max-image-width" src="path/to/image.jpg">
+        <p class="linkbox">Caption</p>
+
+      </div>
+      <!-- Second column, the right half -->
+      <div class="column">
+        <!-- get fancy with a locator map showing where your park is in Kentucky -->
+        <img class="max-image-width" src="graphics/photo2.jpg">
+        <p class="linkbox">Photo of the Arch from the trail location by Miranda Spurgeon</p>
+
+        <img class="max-image-width" src="graphics/photo6.jpg">
+        <p class="linkbox">Photo of the Arch from the other side.</p>
+
+        <img class="max-image-width" src="graphics/RRG_RD.gif">
+        <p class="linkbox">3D rendor of the Arch in ArcGIS pro using LiDAR data.</p>
+
+        <img class="max-image-width" src="rrg\grays_arch\graphics\photo9.jpg">
+        <p class="linkbox">Errosion of rock ajacent of grays arch</p>
+
+      </div>
+    </div>
+
+    <h3>Map details</h3>
+    <p>How was this map made?(PUT LINK TO PYTHON SCRIPT)</p>
+
+    <p>
+      University of Kentucky GEO 409, Fall 2018.
+    </p>
+    <hr>
+    <ul>
+      <li>My <a href="https://user.github.io/bluegrass">Bluegrass maps</a></li>
+      <li>Follow me on instagram <a href="https://instagram.com/mirandamermanda">@mirandamermanda</a></li>
+      <li>Visit <a href='https://github.com'>@MLSpurgeon</a> </li>
+      <li><a href="https://uky-gis.github.io">UKy GIS and Mapping</a></li>
+    </ul>
+  </section>
+
+  <footer>
+		<hr>
+
+		<a href="https://uky-gis.github.io">
+			<img src="https://newmapsplus.github.io/assets/graphics/logo-2018-geography-75px-h.png" alt="University of Kentucky Geography">
+		</a>
+
+	</footer>
+
+</body>
+</html>
